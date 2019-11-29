@@ -1,3 +1,42 @@
+//This function removes the lazy-loading attributes from all img and iframe tags
+//Useful for print view for example (https://bugs.chromium.org/p/chromium/issues/detail?id=875403)
+function removeLazyLoading() {
+
+  //If no Array.from then pretty sure there will be no native lazy-loading support to remove!
+  if (Array.from) {
+    console.log("Removing lazy loading...");
+    
+    Array.from(document.querySelectorAll('img[loading], iframe[loading]')).forEach(function(element) {
+      element.removeAttribute('loading');
+    });
+  }
+}
+
+//Add an event handler to remove LazyLoading when entering print mode
+function removeLazyLoadingOnPrint() {
+  if ("onbeforeprint" in window) {
+   window.onbeforeprint = removeLazyLoading;
+  }
+
+}
+
+//Check if in print mode so we can remove lazy loading and block interactive visuals
+function isInPrintMode() {
+  var printMode = false;
+
+  if (window.URL && window.URLSearchParams) {
+    var url = new URL(window.location);
+    printMode = url.searchParams.has('print');
+  }
+  if (printMode) {
+    console.log ("Print Mode");
+    removeLazyLoading();
+  }
+  gtag('event', 'print-mode', { 'event_category': 'user', 'event_label': '' + printMode, 'value': +printMode })
+  return printMode;
+  
+}
+
 //Check if the screen meets minimum size requirements for Interactive figures
 //At the moment we base it on 600px break point matching CSS but it does not need to be the same
 function bigEnoughForInteractiveFigures() {
@@ -21,9 +60,31 @@ function dataSaverEnabled() {
     } else {
       gtag('event', 'data-saver', { 'event_category': 'user', 'event_label': 'not-enabled', 'value': 0 });
     }
+  } else {
+    gtag('event', 'data-saver', { 'event_category': 'user', 'event_label': 'not-reported', 'value': 0 });
   }
 
   return dataSaver;
+}
+
+//Check if network API states this is a high bandwidth connection
+//Assume it is for those browsers who do not support this (e.g. Safari and IE)
+function highBandwidthConnection() {
+  var highBandwidth = true;
+  if ('connection' in navigator) {
+    const effectiveType = navigator.connection.effectiveType;
+    if (effectiveType == 'slow-2g' || effectiveType == '2g' || effectiveType == '3g') {
+      highBandwidth = false;
+      console.log('effectiveType ' + effectiveType + ' is low BandWidth');
+      gtag('event', 'connection-type', { 'event_category': 'user', 'event_label': effectiveType, 'value': 0 });
+    } else {
+      gtag('event', 'connection-type', { 'event_category': 'user', 'event_label': effectiveType, 'value': 1 });
+    }
+  } else {
+    gtag('event', 'connection-type', { 'event_category': 'user', 'event_label': 'not-reported', 'value': 1 });
+  }
+
+  return highBandwidth;
 }
 
 //iOS causes Google Sheets to create a 6000 by 3700 canvas, which annoyingly isn't supported by iOS!
@@ -98,7 +159,7 @@ function googleSheetsPixelNotLoaded() {
 function upgradeInteractiveFigures() {
 
   try {
-    if (bigEnoughForInteractiveFigures() && !dataSaverEnabled() && highResolutionCanvasSupported()) {
+    if (!isInPrintMode() && bigEnoughForInteractiveFigures() && !dataSaverEnabled() && highBandwidthConnection() && highResolutionCanvasSupported()) {
 
       console.log('Upgrading to interactive figures');
 
@@ -140,7 +201,6 @@ function upgradeInteractiveFigures() {
             parentLink.classList.add("fig-mobile");
           }
 
-
         }
       };
 
@@ -166,7 +226,7 @@ function upgradeInteractiveFigures() {
 
 function setDiscussionCount() {
   try {
-    if (window.discussion_url) {
+    if (window.discussion_url && window.fetch) {
       fetch(window.discussion_url)
         .then(function (response) { return response.json(); })
         .then(function (response) {
@@ -179,7 +239,10 @@ function setDiscussionCount() {
             return;
           }
           var el = document.getElementById('num_comments');
-          el.innerText = comments + ' ' + (comments == 1 ? 'comment' : 'comments');
+          el.innerText = comments;
+          
+          document.getElementById(comments <= 1 ? 'comment-singular' : 'comment-plural').removeAttribute('data-translation');
+          
           gtag('event', 'discussion-count', { 'event_category': 'user', 'event_label': 'enabled', 'value': 1 });
         })
         .catch(function (err) {
@@ -193,6 +256,6 @@ function setDiscussionCount() {
   }
 }
 
+removeLazyLoadingOnPrint();
 upgradeInteractiveFigures();
-//setDiscussionCount();
-
+setDiscussionCount();

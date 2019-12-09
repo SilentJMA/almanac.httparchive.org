@@ -33,7 +33,7 @@ L'hex est le moyen le plus populaire pour décrire la couleur de loin, avec une 
 
 <figure>
   <a href="/static/images/2019/02_CSS/fig1.png">
-    <img src="/static/images/2019/02_CSS/fig1.png" alt="Figure 1. Popularity of color formats." aria-labelledby="fig1-caption" aria-describedby="fig1-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1946838030&amp;format=interactive">
+    <img src="/static/images/2019/02_CSS/fig1.png" alt="Figure 1. Popularité des formats de couleur." aria-labelledby="fig1-caption" aria-describedby="fig1-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1946838030&amp;format=interactive">
   </a>
   <div id="fig1-description" class="visually-hidden">Diagramme à barres illustrant l'adoption des formats de couleur HSL, HSLA, RGB, RGBA et hexadécimale. Hex est utilisé sur 93 % des pages de version desktop, RGBA sur 83 %, RGB sur 22 %, HSLA 19 % et HSL 1 %. L’adoption sur les versions desktop et les appareils mobiles est similaire pour tous les formats de couleur, à l’exception de la LGV, pour laquelle l’adoption mobile est de 9 % (9 fois plus élevée).</div>
   <figcaption id="fig1-caption">Figure 1. Popularité des formats de couleur.</figcaption>
@@ -42,18 +42,21 @@ L'hex est le moyen le plus populaire pour décrire la couleur de loin, avec une 
 ### Choix de couleur
 
 Il y a [148 couleurs CSS nommées](https://www.w3.org/TR/css-color-4/#named-colors), non compris les valeurs spéciales `transparent` et `currentcolor`. Vous pouvez les utiliser par leur nom de chaîne pour un style plus lisible. Les couleurs nommées les plus populaires sont `black` et `white`, Sans surprise, suivi de `red` et `blue`.
+
 <figure>
   <a href="/static/images/2019/02_CSS/fig2.png">
     <img src="/static/images/2019/02_CSS/fig2.png" alt="Figure 2. Top couleurs nommées." aria-labelledby="fig2-caption" aria-describedby="fig2-description" width="600" data-width="600" data-height="415" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1985913808&amp;format=interactive">
   </a>
   <div id="fig2-description" class="visually-hidden">Graphique à secteurs montrant les couleurs nommées les plus populaires. Le blanc est le plus populaire à 40%, puis le noir à 22%, le rouge 11% et le bleu 5%.</div>
-  <figcaption id="fig2-caption">Figure 2. Top Couleurs nommées.</figcaption></figure>
+  <figcaption id="fig2-caption">Figure 2. Top Couleurs nommées.</figcaption>
+</figure>
 
 La langue est également intéressante inférée par la couleur. Il y a plus d'exemples du style-américain "gray" que le style-britannique "grey". Presque chaque instance de [couleurs gray](https://www.rapidtables.com/web/color/gray-color.html) (`gray`, `lightgray`, `darkgray`, `slategray`, etc.) avait presque une double utilisation quand orthographié avec un "a" au lieu d'un "e". Si gr[a/e]ys combinés, ils se classeraient plus haut que le bleu, se solidifiant à la #4 place. Cela pourrait être la raison `silver` est classé plus haut que `grey` avec un "e" Dans les tableaux !
 
 ### Nombre de couleurs
 
-Combien de couleurs de police différentes sont utilisées sur le Web? Donc, ce n'est pas le nombre total de couleurs uniques; c'est plutôt le nombre de couleurs différentes utilisé uniquement pour le texte. Les chiffres de ce tableau sont assez élevés et d’après notre expérience, nous savons que sans les variables CSS, les espaces, les tailles et les couleurs peuvent rapidement vous échapper et se fragmenter en une multitude de petites valeurs dans vos styles. Ces chiffres reflètent une difficulté de gestion du style et nous espérons que cela vous aidera à créer une perspective que vous pourrez ramener à vos équipes ou projets. Comment pouvez-vous réduire ce nombre à un montant gérable et raisonnable ?
+Combien de couleurs de police différentes sont utilisées sur le Web ? Donc, ce n'est pas le nombre total de couleurs uniques; c'est plutôt le nombre de couleurs différentes utilisé uniquement pour le texte. Les chiffres de ce tableau sont assez élevés et d’après notre expérience, nous savons que sans les variables CSS, les espaces, les tailles et les couleurs peuvent rapidement vous échapper et se fragmenter en une multitude de petites valeurs dans vos styles. Ces chiffres reflètent une difficulté de gestion du style et nous espérons que cela vous aidera à créer une perspective que vous pourrez ramener à vos équipes ou projets. Comment pouvez-vous réduire ce nombre à un montant gérable et raisonnable ?
+
 <figure>
   <a href="/static/images/2019/02_CSS/fig3.png">
     <img src="/static/images/2019/02_CSS/fig3.png" alt="igure 3. Répartition des couleurs par page." aria-labelledby="fig3-caption" aria-describedby="fig3-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1361184636&amp;format=interactive">
@@ -64,151 +67,175 @@ Combien de couleurs de police différentes sont utilisées sur le Web? Donc, ce 
 
 ### Duplication de couleur
 
-Eh bien, nous sommes curieux ici et souhaitons vérifier le nombre de couleurs en double présentes sur une page. Sans un système CSS de classe réutilisable étroitement géré, les doublons sont assez faciles à créer. Il s'avère que la médiane a suffisamment des doublons pour mériter un passage pour les unifier avec des propriétés personnalisées.<figure><a href="/static/images/2019/02_CSS/fig4.png">
-<img src="/static/images/2019/02_CSS/fig4.png" alt="Figure 4. Distribution of duplicate colors per page." aria-labelledby="fig4-caption" aria-describedby="fig4-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=326531498&format=interactive">
+Eh bien, nous sommes curieux ici et souhaitons vérifier le nombre de couleurs en double présentes sur une page. Sans un système CSS de classe réutilisable étroitement géré, les doublons sont assez faciles à créer. Il s'avère que la médiane a suffisamment des doublons pour mériter un passage pour les unifier avec des propriétés personnalisées.
+
+<figure>
+  <a href="/static/images/2019/02_CSS/fig4.png">
+<img src="/static/images/2019/02_CSS/fig4.png" alt="Figure 4. Répartition des couleurs en double par page." aria-labelledby="fig4-caption" aria-describedby="fig4-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=326531498&format=interactive">
  </a> 
- <div id="fig4-description" class="visually-hidden"> 
-    
-  
-  Diagramme à barres illustrant la répartition des couleurs par page. La page de version desktop médiane a 24 couleurs en double. Le dixième centile correspond à 4 couleurs en double et le 90e centile à 62. Les distributions pour les postes de versions desktop mobiles sont similaires.</div>
-<figcaption id="fig4-caption">
-  Figure 4. Répartition des couleurs en double par page.</figcaption></figure>
+ <div id="fig4-description" class="visually-hidden">Diagramme à barres illustrant la répartition des couleurs par page. La page de version desktop médiane a 24 couleurs en double. Le dixième centile correspond à 4 couleurs en double et le 90e centile à 62. Les distributions pour les postes de versions desktop mobiles sont similaires.</div>
+<figcaption id="fig4-caption">Figure 4. Répartition des couleurs en double par page.</figcaption>
+</figure>
 
 ## Unités
-En CSS, il existe de nombreuses façons d'obtenir le même résultat visuel en utilisant différents types d'unité: `rem`, `px`, `em`, `ch`, ou même `cm`! Alors, quels types d'unités sont les plus populaires?<figure><a href="/static/images/2019/02_CSS/fig5.png"><img src="/static/images/2019/02_CSS/fig5.png" alt="Figure 5. Popularity of unit types." aria-labelledby="fig5-caption" aria-describedby="fig5-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=540111393&format=interactive">
 
- <div id="fig5-description" class="visually-hidden"> 
-  
-    
-  
-  Diagramme à barres illustrant la popularité de divers types d’unités. px et em sont utilisés sur plus de 90 % des pages. rem est le type d'unité le plus populaire sur 40 % des pages et sa popularité chute rapidement pour les types d'unité restants.</div>
-<figcaption id="fig5-caption">
-  Figure 5. Popularité des types d'unités.
-</figcaption></a></figure>
+En CSS, il existe de nombreuses façons d'obtenir le même résultat visuel en utilisant différents types d'unité: `rem`, `px`, `em`, `ch`, ou même `cm`! Alors, quels types d'unités sont les plus populaires ?
+
+<figure>
+  <a href="/static/images/2019/02_CSS/fig5.png">
+    <img src="/static/images/2019/02_CSS/fig5.png" alt="Figure 5. Popularité des types d'unités." aria-labelledby="fig5-caption" aria-describedby="fig5-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=540111393&amp;format=interactive">
+  </a>
+  <div id="fig5-description" class="visually-hidden">Diagramme à barres de la popularité de divers types d'unités. px et em sont utilisés sur plus de 90% des pages. rem est le deuxième type d'unité le plus populaire sur 40% des pages et la popularité chute rapidement pour les types d'unités restants.</div>
+  <figcaption id="fig5-caption">Figure 5. Popularité des types d'unités.</figcaption>
+</figure>
 
 ### Longueur et dimensionnement
-Sans surprise, dans la figure 5 ci-dessus, `px` est le type d'unité le plus utilisé, avec environ 95 % des pages Web utilisant des pixels sous une forme ou une autre (par exemple, la taille de l'élément, la taille de la police, etc.). Cependant, le `em` l'unité est presque aussi populaire, avec environ 90 % d'utilisation. Ceci est plus de 2x plus populaire que le `rem` unité, qui n’a que 40 % de fréquence dans les pages Web. Si vous vous demandez quelle est la différence, `em` est basé sur la taille de la police parente, alors que `rem` est basé sur la taille de police de base définie pour la page. Cela ne change pas par composant comme `em` pourrait, et permet donc d'ajuster tous les espacements de manière uniforme.
-En ce qui concerne les unités basées sur l’espace physique, la `cm` (ou centimètre) est de loin le plus populaire, suivi de `in` (inches), et alors `Q`. Nous savons que ces types d’unités sont particulièrement utiles pour les feuilles de style d’impression, mais nous ne connaissions même pas la `Q` L'unité existait jusqu'à cette enquête ! et toi ?<aside>
-Une version antérieure de ce chapitre traitait de l'inattendu pop<code>u</code>larity of the Q unit.<a href="https://discuss.httparchive.org/t/chapter-2-css/1757/6"> Grace à la communauté</a> discussion autour ce chapitre, nous avons identifié qu’il s’agissait d’un bogue dans notre analyse et nous avons mis à jour la figure 5 en conséquence.</aside>
-### Unités basées sur une fenêtre
-Nous avons constaté une grandes différences entre les types d’unités quand ça vient à l’utilisation mobile et la version desktop des unités basées sur une fenêtre. 36,8 % des sites mobiles utilisent `vh` (hauteur de la fenêtre d'affichage), contre seulement 31 % des sites pour la version desktop. Nous avons également constaté que `vh` est plus courant que` vw` (largeur de la fenêtre d'affichage) d'environ 11 %. `vmin` (viewport minimum) est plus populaire que` vmax` (viewport maximum), avec environ 8 % d'utilisation de `vmin` sur mobile, tandis que` vmax` n'est utilisé que par 1% des sites Web.
-### Propriétés personnalisées
-Les propriétés personnalisées sont ce que beaucoup appellent des variables CSS. Ils sont cependant plus dynamiques qu'une variable statique typique! Ils sont très puissants et en tant que communauté, nous découvrons encore leur<figure><div class="big-number"> potentiel.</div>
-<figcaption>
 
-  5%
-  Figure 6. Pourcentage de pages utilisant des propriétés personnalisées.</figcaption></figure>
+Sans surprise, dans la figure 5 ci-dessus, `px` est le type d'unité le plus utilisé, avec environ 95 % des pages Web utilisant des pixels sous une forme ou une autre (par exemple, la taille de l'élément, la taille de la police, etc.). Cependant, le `em` l'unité est presque aussi populaire, avec environ 90 % d'utilisation. Ceci est plus de 2x plus populaire que le `rem` unité, qui n’a que 40 % de fréquence dans les pages Web. Si vous vous demandez quelle est la différence, `em` est basé sur la taille de la police parente, alors que `rem` est basé sur la taille de police de base définie pour la page. Cela ne change pas par composant comme `em` pourrait, et permet donc d'ajuster tous les espacements de manière uniforme.
+
+En ce qui concerne les unités basées sur l’espace physique, la `cm` (ou centimètre) est de loin le plus populaire, suivi de `in` (inches), et alors `Q`. Nous savons que ces types d’unités sont particulièrement utiles pour les feuilles de style d’impression, mais nous ne connaissions même pas la `Q` L'unité existait jusqu'à cette enquête ! et toi ?
+
+<aside>Une version antérieure de ce chapitre traitait de l'inattendu pop<code>u</code>larity of the Q unit.<a href="https://discuss.httparchive.org/t/chapter-2-css/1757/6"> Grace à la communauté</a> discussion autour ce chapitre, nous avons identifié qu’il s’agissait d’un bogue dans notre analyse et nous avons mis à jour la figure 5 en conséquence.</aside>
+
+### Unités basées sur une fenêtre
+
+Nous avons constaté une grandes différences entre les types d’unités quand ça vient à l’utilisation mobile et la version desktop des unités basées sur une fenêtre. 36,8 % des sites mobiles utilisent `vh` (hauteur de la fenêtre d'affichage), contre seulement 31 % des sites pour la version desktop. Nous avons également constaté que `vh` est plus courant que` vw` (largeur de la fenêtre d'affichage) d'environ 11 %. `vmin` (viewport minimum) est plus populaire que` vmax` (viewport maximum), avec environ 8 % d'utilisation de `vmin` sur mobile, tandis que` vmax` n'est utilisé que par 1% des sites Web.
+
+### Propriétés personnalisées
+
+Les propriétés personnalisées sont ce que beaucoup appellent des variables CSS. Ils sont cependant plus dynamiques qu'une variable statique typique! Ils sont très puissants et en tant que communauté, nous découvrons encore leur
+
+<figure>
+  <div class="big-number">5%</div>
+  <figcaption>Figure 6. Pourcentage de pages utilisant des propriétés personnalisées.</figcaption>
+</figure>
 
 Nous nous sommes sentis que ces informations intéressantes, car elles montrent une croissance saine de l’un de nos ajouts CSS préférés. Ils étaient disponibles dans tous les principaux navigateurs depuis 2016 ou 2017, il est donc juste de dire qu'ils sont relativement nouveaux. De nombreuses personnes sont encore en train de passer de leurs variables de préprocesseur CSS aux propriétés personnalisées CSS. Nous estimons qu'il faudra encore quelques années avant que les propriétés personnalisées deviennent la norme.
+
 ## Sélecteurs
+
 ### ID vs sélecteurs de classe
-CSS a plusieurs façons de trouver des éléments sur la page à des fins de style, nous allons donc mettre les identifiants et les classes les unes contre les autres pour voir lequel est le plus répandu ! Les résultats ne devraient pas être trop surprenant: les classes sont<figure> plus<a href="/static/images/2019/02_CSS/fig7.png"> populaire !</a><img src="/static/images/2019/02_CSS/fig7.png" alt="Figure 7. Popularity of selector types per page." aria-labelledby="fig7-caption" aria-describedby="fig7-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1216272563&format=interactive"><div id="fig7-description" class="visually-hidden">
 
-  
-  
-    
-  
-  Diagramme à barres illustrant l'adoption des types de sélecteurs d'identifiant et de classe. Les classes sont utilisées sur le 95 % des pages de bureau et mobiles. Les identifiants sont utilisés sur le 89 % des pages de version desktop et 87 % des pages mobiles.</div>
-<figcaption id="fig7-caption">
-  Figure 7. Popularité de select ou types par page.</figcaption></figure>
+CSS a plusieurs façons de trouver des éléments sur la page à des fins de style, nous allons donc mettre les identifiants et les classes les unes contre les autres pour voir lequel est le plus répandu ! Les résultats ne devraient pas être trop surprenant: les classes sont
+ plus populaire !
+ 
+<figure>
+  <a href="/static/images/2019/02_CSS/fig7.png">
+    <img src="/static/images/2019/02_CSS/fig7.png" alt="Figure 7. Popularité des types de sélecteurs par page." aria-labelledby="fig7-caption" aria-describedby="fig7-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1216272563&amp;format=interactive">
+  </a>
+  <div id="fig7-description" class="visually-hidden">Diagramme à barres illustrant l'adoption des types de sélecteurs d'identifiant et de classe. Les classes sont utilisées sur le 95 % des pages de bureau et mobiles. Les identifiants sont utilisés sur le 89 % des pages de version desktop et 87 % des pages mobiles.</div>
+<figcaption id="fig7-caption">  Figure 7. Popularité de select ou types par page.</figcaption>
+</figure>
 
-Celui-ci est un bon tableau de suivi montrant que les classes occupent 93 % des sélecteurs présents dans une feuille de style.<figure><a href="/static/images/2019/02_CSS/fig8.png"><img src="/static/images/2019/02_CSS/fig8.png" alt="Figure 8. Popularity of selector types per selector." aria-labelledby="fig8-caption" aria-describedby="fig8-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=351006989&format=interactive"><div id="fig8-description" class="visually-hidden">
+Celui-ci est un bon tableau de suivi montrant que les classes occupent 93 % des sélecteurs présents dans une feuille de style.
 
-  
-  
-    
-  
-  Diagramme à barres montrant que 94 % des sélecteurs incluent le sélecteur de classe pour les versions desktop et mobiles, tandis que 7 % des sélecteurs de desktop incluent le sélecteur d'identifiant (8% pour les mobiles).</div>
-<figcaption id="fig8-caption">
-  Figure 8. Popularité des types de sélecteur par sélecteur.</figcaption></a></figure>
+<figure>
+  <a href="/static/images/2019/02_CSS/fig8.png">
+    <img src="/static/images/2019/02_CSS/fig8.png" alt="Figure 8. Popularité des types de sélecteurs par sélecteur." aria-labelledby="fig8-caption" aria-describedby="fig8-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=351006989&amp;format=interactive">
+  </a>
+  <div id="fig8-description" class="visually-hidden">Diagramme à barres montrant que 94 % des sélecteurs incluent le sélecteur de classe pour les versions desktop et mobiles, tandis que 7 % des sélecteurs de desktop incluent le sélecteur d'identifiant (8% pour les mobiles).</div>
+<figcaption id="fig8-caption">Figure 8. Popularité des types de sélecteur par sélecteur.</figcaption></a>
+</figure>
 
 ### Sélecteurs d'attributs
-CSS a des sélecteurs de comparaison très puissants. Ce sont des sélecteurs comme `[target="_blank"]`, `[attribute^="value"]`, `[title~="rad"]`, `[attribute$="-rad"]` ou `[attribute*="value"]`. Est-ce que vous les utilisez? Vous pensez qu'ils sont beaucoup utilisés? Comparons leur utilisation avec les identifiants et les classes sur le Web.<figure><a href="/static/images/2019/02_CSS/fig9.png"><img src="/static/images/2019/02_CSS/fig9.png" alt="Figure 9. Popularity of operators per ID attribute selector." aria-labelledby="fig9-caption" aria-describedby="fig9-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=695879874&format=interactive"><div id="fig9-description" class="visually-hidden">
 
-  
-  
-    
-  
-  Diagramme à barres illustrant la popularité des opérateurs utilisés par les sélecteurs d'attributs ID. Environ 4 % des pages pour version desktop et mobiles utilisent étoiles-égales et carétaux-égaux. 1 % des pages utilisent des égaux et des dollars égaux. 0 % utilise tilde-égal.</div>
-<figcaption id="fig9-caption">
-  Figure 9. Popularité des opérateurs par sélecteur d'attribut ID.</figcaption></a></figure> <figure><a href="/static/images/2019/02_CSS/fig10.png"><img src="/static/images/2019/02_CSS/fig10.png" alt="Figure 10. Popularity of operators per class attribute selector." aria-labelledby="fig10-caption" aria-describedby="fig10-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=377805296&format=interactive"><div id="fig10-description" class="visually-hidden">
+CSS a des sélecteurs de comparaison très puissants. Ce sont des sélecteurs comme `[target="_blank"]`, `[attribute^="value"]`, `[title~="rad"]`, `[attribute$="-rad"]` ou `[attribute*="value"]`. Est-ce que vous les utilisez? Vous pensez qu'ils sont beaucoup utilisés? Comparons leur utilisation avec les identifiants et les classes sur le Web.
+<figure>
+  <a href="/static/images/2019/02_CSS/fig9.png">
+    <img src="/static/images/2019/02_CSS/fig9.png" alt="Figure 9. Popularité des opérateurs par sélecteur d'attribut ID." aria-labelledby="fig9-caption" aria-describedby="fig9-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=695879874&amp;format=interactive">
+  </a>
+  <div id="fig9-description" class="visually-hidden">Diagramme à barres illustrant la popularité des opérateurs utilisés par les sélecteurs d'attributs ID. Environ 4 % des pages pour version desktop et mobiles utilisent étoiles-égales et carétaux-égaux. 1 % des pages utilisent des égaux et des dollars égaux. 0 % utilise tilde-égal.</div>
+<figcaption id="fig9-caption">  Figure 9. Popularité des opérateurs par sélecteur d'attribut ID.</figcaption></a>
+</figure>
 
-
-  
-  
-    
-  
-  Diagramme à barres illustrant la popularité des opérateurs utilisés par les sélecteurs d'attributs de classe. 57 % des pages utilisent des étoiles égales. 36 % utilisent caret-equals. 1 % utilisent égal et dollar égal. 0 % utilise tilde-égal.</div>
-<figcaption id="fig10-caption">
-  Figure 10. Popularité des sélecteurs d'attribut d'opérateurs par classe.</figcaption></a></figure>
+<figure>
+  <a href="/static/images/2019/02_CSS/fig10.png">
+    <img src="/static/images/2019/02_CSS/fig10.png" alt="Figure 10. Popularité des opérateurs par sélecteur d'attribut de classe." aria-labelledby="fig10-caption" aria-describedby="fig10-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=377805296&amp;format=interactive">
+  </a>
+  <div id="fig10-description" class="visually-hidden">Diagramme à barres illustrant la popularité des opérateurs utilisés par les sélecteurs d'attributs de classe. 57 % des pages utilisent des étoiles égales. 36 % utilisent caret-equals. 1 % utilisent égal et dollar égal. 0 % utilise tilde-égal.</div>
+<figcaption id="fig10-caption">Figure 10. Popularité des sélecteurs d'attribut d'opérateurs par classe.</figcaption></a>
+</figure>
 
 Ces opérateurs sont beaucoup plus populaires auprès des sélecteurs de classe que les ID, ce qui semble naturel dans la mesure où une feuille de style comporte généralement moins de sélecteurs d’ID que de sélecteurs de classe, mais reste néanmoins pratique pour voir les utilisations de toutes ces combinaisons.
-### Classes par élément
-Avec la montée en puissance des stratégies CSS, atomiques, et OOCSS fonctionnelles pouvant composer 10 classes ou plus sur un élément afin d'obtenir un aspect de conception, nous pourrions peut-être voir des résultats intéressants. La requête est revenue sans énigme, la médiane sur mobile et desktop étant de 1 classe par élément.<figure><div class="big-number">
-<figcaption>
 
-  1
-  Figure 11. Nombre médian d'attributs de noms de classe par classe (version desktop et mobiles).</figcaption>
+### Classes par élément
+
+Avec la montée en puissance des stratégies CSS, atomiques, et OOCSS fonctionnelles pouvant composer 10 classes ou plus sur un élément afin d'obtenir un aspect de conception, nous pourrions peut-être voir des résultats intéressants. La requête est revenue sans énigme, la médiane sur mobile et desktop étant de 1 classe par élément.
+<figure>
+  <div class="big-number">1</div>
+  <figcaption>Figure 11. Nombre médian d'attributs de noms de classe par classe (version desktop et mobiles).</figcaption>
 
 ## Mises en page
-### Flexbox
-[Flexbox](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox) est un style de conteneur qui dirige et aligne ses éléments; c'est-à-dire que cela aide à la mise en page d'une manière basée sur les contraintes. Les débuts sur le Web ont été plutôt difficiles, car ses spécifications ont subi deux ou trois changements radicaux entre 2010 et 2013. Heureusement, elle a été adoptée et mise en œuvre sur tous les navigateurs dès 2014. D'après cet historique, le taux d'adoption était lent, mais ça fait quelques années depuis! Il est assez populaire maintenant et contient de nombreux articles sur la manière de l'exploiter, mais il est encore nouveau par rapport aux autres tactiques de mise en page.<figure><a href="/static/images/2019/02_CSS/fig12.png"><img src="/static/images/2019/02_CSS/fig12.png" alt="Figure 12. Adoption of flexbox." aria-labelledby="fig12-caption" aria-describedby="fig12-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=2021161093&format=interactive"><div id="fig12-description" class="visually-hidden">
 
-  
-  
-    
-  
-   </div>
-<figcaption id="fig12-caption">Diagramme à barres montrant 49 % des versions desktop et 52 % des pages mobiles utilisant flexbox.
-  Figure 12. Adoption du flexbox.</figcaption></a></figure>
+### Flexbox
+
+[Flexbox](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox) est un style de conteneur qui dirige et aligne ses éléments; c'est-à-dire que cela aide à la mise en page d'une manière basée sur les contraintes. Les débuts sur le Web ont été plutôt difficiles, car ses spécifications ont subi deux ou trois changements radicaux entre 2010 et 2013. Heureusement, elle a été adoptée et mise en œuvre sur tous les navigateurs dès 2014. D'après cet historique, le taux d'adoption était lent, mais ça fait quelques années depuis! Il est assez populaire maintenant et contient de nombreux articles sur la manière de l'exploiter, mais il est encore nouveau par rapport aux autres tactiques de mise en page.
+
+<figure>
+  <a href="/static/images/2019/02_CSS/fig12.png">
+    <img src="/static/images/2019/02_CSS/fig12.png" alt="Figure 12. Adoption du flexbox." aria-labelledby="fig12-caption" aria-describedby="fig12-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=2021161093&amp;format=interactive">
+  </a>
+  <div id="fig12-description" class="visually-hidden">Diagramme à barres montrant 49 % des versions desktop et 52 % des pages mobiles utilisant flexbox.
+  </div>
+  <figcaption id="fig12-caption">Figure 12. Adoption du flexbox.</figcaption>
+</figure>
 
 Tout à fait de la réussite illustrée ici, puisque près de 50 % du Web utilise des Flexbox dans ses feuilles de style.
-### Grilles
-Like flexbox, [grid](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout) a également connu quelques alternances de spécifications au début de sa vie, mais sans changer les implémentations dans les navigateurs déployés publiquement. Microsoft utilisait Grille dans les premières versions de Windows 8, en tant que moteur de disposition principal pour son style de conception à défilement horizontal. Il a d'abord été approuvé, puis transféré sur le Web, puis renforcé par les autres navigateurs jusqu'à sa version finale en 2017. Le lancement a été très réussi. Presque tous les navigateurs ont publié leurs implémentations en même temps. Les développeurs Web se sont donc réveillés. un jour au support de la grille superbe. Aujourd'hui, à la fin de 2019, la grille se sent toujours comme un nouvel enfant sur le bloc, alors que les gens sont toujours en train de prendre conscience de sa puissance et de ses capacités.</div>
-<figure><div class="big-number">
-<figcaption>
 
-  2%
-  Figure 13. Pourcentage de sites Web utilisant la grille.</figcaption>
+### Grilles
+
+Like flexbox, [grid](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout) a également connu quelques alternances de spécifications au début de sa vie, mais sans changer les implémentations dans les navigateurs déployés publiquement. Microsoft utilisait Grille dans les premières versions de Windows 8, en tant que moteur de disposition principal pour son style de conception à défilement horizontal. Il a d'abord été approuvé, puis transféré sur le Web, puis renforcé par les autres navigateurs jusqu'à sa version finale en 2017. Le lancement a été très réussi. Presque tous les navigateurs ont publié leurs implémentations en même temps. Les développeurs Web se sont donc réveillés. un jour au support de la grille superbe. Aujourd'hui, à la fin de 2019, la grille se sent toujours comme un nouvel enfant sur le bloc, alors que les gens sont toujours en train de prendre conscience de sa puissance et de ses capacités.
+
+<figure>
+  <div class="big-number">2%</div>
+  <figcaption>Figure 13. Pourcentage de sites Web utilisant une grille.</figcaption>
+</figure>
 
 Cela montre à quel point la communauté du développement Web a peu exercé et exploré son dernier outil de présentation. Nous attendons avec impatience la prise de contrôle éventuelle de la grille en tant que moteur principal de la mise en page sur lequel les personnes s’appuient lors de la construction d’un site. Pour nous, auteurs, nous aimons écrire sur grille: nous l’atteignons d’abord, puis nous recomposons notre complexité à mesure que nous réalisons et itérons sur la mise en page. Il reste à voir ce que le reste du monde fera avec cette puissante fonctionnalité CSS au cours des prochaines années.
-### Modes d'écriture
-Le Web et le CSS sont des fonctionnalités de plate-forme internationales, et les modes d'écriture offrent au HTML et au CSS un moyen d'indiquer l'orientation préférée de l'utilisateur en matière de lecture et d'écriture au sein de nos éléments.<figure><a href="/static/images/2019/02_CSS/fig14.png"><img src="/static/images/2019/02_CSS/fig14.png" alt="Figure 14. Popularity of direction values." aria-labelledby="fig14-caption" aria-describedby="fig14-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=136847988&format=interactive"><div id="fig14-description" class="visually-hidden">
 
-  
-  
-    
-  
-  Diagramme à barres illustrant la popularité des valeurs de direction ltr et rtl. 32 % des pages de version desktop et 40% des pages mobiles utilisent ltr. RTL est utilisé par 32 % des pages de bureau et 36 % des pages mobiles.</div>
-<figcaption id="fig14-caption">
-  Figure 14. Popularité des valeurs de direction.</figcaption></a></figure>
+### Modes d'écriture
+
+Le Web et le CSS sont des fonctionnalités de plate-forme internationales, et les modes d'écriture offrent au HTML et au CSS un moyen d'indiquer l'orientation préférée de l'utilisateur en matière de lecture et d'écriture au sein de nos éléments.
+<figure>
+  <a href="/static/images/2019/02_CSS/fig14.png">
+    <img src="/static/images/2019/02_CSS/fig14.png" alt="Figure 14. Popularité des valeurs de direction." aria-labelledby="fig14-caption" aria-describedby="fig14-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=136847988&amp;format=interactive">
+  </a>
+  <div id="fig14-description" class="visually-hidden">Diagramme à barres illustrant la popularité des valeurs de direction ltr et rtl. 32 % des pages de version desktop et 40% des pages mobiles utilisent ltr. RTL est utilisé par 32 % des pages de bureau et 36 % des pages mobiles.</div>
+<figcaption id="fig14-caption">Figure 14. Popularité des valeurs de direction.</figcaption></a>
+</figure>
 
 ## Typographie
+
 ### Polices Web par page
-Combien de polices Web chargez-vous sur votre page Web: 0 ? 10 ? Le nombre médian de polices Web par page est de 3 !<figure><a href="/static/images/2019/02_CSS/fig15.png"><img src="/static/images/2019/02_CSS/fig15.png" alt="Figure 15. Distribution of the number of web fonts loaded per page." aria-labelledby="fig15-caption" aria-describedby="fig15-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1453570774&format=interactive"><div id="fig15-description" class="visually-hidden">
 
-  
-  
-    
-  
-  Répartition du nombre de polices Web chargées par page. Sur les ordinateurs de bureau, les 10, 25, 50, 75 et 90ème centile sont les suivants: 0, 1, 3, 6 et 9. Ce chiffre est légèrement supérieur à la distribution mobile, qui est une police de moins dans les 75ème et 90ème centile.</div>
-<figcaption id="fig15-caption">
-  Figure 15. Répartition du nombre de polices Web chargées par page.</figcaption>
-</a></figure>
+Combien de polices Web chargez-vous sur votre page Web: 0 ? 10 ? Le nombre médian de polices Web par page est de 3 !
+
+<figure>
+  <a href="/static/images/2019/02_CSS/fig15.png">
+    <img src="/static/images/2019/02_CSS/fig15.png" alt="Figure 15. Répartition du nombre de polices Web chargées par page." aria-labelledby="fig15-caption" aria-describedby="fig15-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1453570774&amp;format=interactive">
+  </a>
+  <div id="fig15-description" class="visually-hidden">Répartition du nombre de polices Web chargées par page. Sur les ordinateurs de bureau, les 10, 25, 50, 75 et 90ème centile sont les suivants: 0, 1, 3, 6 et 9. Ce chiffre est légèrement supérieur à la distribution mobile, qui est une police de moins dans les 75ème et 90ème centile.</div>
+<figcaption id="fig15-caption">Figure 15. Répartition du nombre de polices Web chargées par page.</figcaption>
+</a>
+</figure>
+
 ### Familles de polices populaires
-Un suivi naturel à la recherche du nombre total de polices par page est: quelles polices sont-elles ?! Designers vous allez maintenant voir si vos choix correspondent ou non à ce qui est populaire.<figure><a href="/static/images/2019/02_CSS/fig16.png"><img src="/static/images/2019/02_CSS/fig16.png" alt="Figure 16. Top web fonts." aria-labelledby="fig16-caption" aria-describedby="fig16-description" width="600" data-width="600" data-height="450.5" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1883567922&format=interactive"><div id="fig16-description" class="visually-hidden">
 
-  
-  
-    
-  
-  Diagramme à barres des polices les plus populaires. Parmi les pages de version desktop, on trouve Open Sans (24 %), Roboto (15 %), Montserrat (5 %), Source Sans Pro (4 %), Noto Sans JP (3 %) et Lato (3 %). Sur mobile, les différences les plus notables sont qu'Open Sans est utilisé 22 % du temps (de 24 %) et Roboto est utilisé 19 % du temps (à partir de 15 %).</div>
-<figcaption id="fig16-caption"> </figcaption></a></figure>
-  Figure 16. Top polices Web.
+Un suivi naturel à la recherche du nombre total de polices par page est: quelles polices sont-elles ?! Designers vous allez maintenant voir si vos choix correspondent ou non à ce qui est populaire.
+
+<figure>
+  <a href="/static/images/2019/02_CSS/fig16.png">
+    <img src="/static/images/2019/02_CSS/fig16.png" alt="Figure 16. Top web fonts." aria-labelledby="fig16-caption" aria-describedby="fig16-description" width="600" data-width="600" data-height="450.5" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1883567922&amp;format=interactive">
+  </a>
+  <div id="fig16-description" class="visually-hidden">Diagramme à barres des polices les plus populaires. Parmi les pages de version desktop, on trouve Open Sans (24 %), Roboto (15 %), Montserrat (5 %), Source Sans Pro (4 %), Noto Sans JP (3 %) et Lato (3 %). Sur mobile, les différences les plus notables sont qu'Open Sans est utilisé 22 % du temps (de 24 %) et Roboto est utilisé 19 % du temps (à partir de 15 %).</div>
+  <figcaption id="fig16-caption">Figure 16. Top web fonts.</figcaption>
+</figure>
 
 Open Sans est un énorme gagnant ici, avec près de 1 déclaration CSS sur 4 `@font-family` qui le spécifie. Nous avons certainement utilisé Open Sans dans des projets d'agences.
 Il est également intéressant de noter les différences entre l'adoption d'un ordinateur de bureau et d'une application mobile. Par exemple, les pages mobiles utilisent Open Sans un peu moins souvent que les versions desktop. Pendant ce temps, ils utilisent aussi Roboto un peu plus souvent.
+
 ### Tailles de police
+
 C’est intéressant, car si vous demandiez à un utilisateur combien de tailles de police il estimait être sur une page, il renverrait en général un nombre de 5 ou nettement inférieur à 10. C’est la réalité ? Même dans un système de design, combien de tailles de police existe-t-il ? Nous avons interrogé le Web et avons trouvé que la médiane était 40 sur un mobile et 38 sur version desktop. Il serait peut-être temps de réfléchir sérieusement aux propriétés personnalisées ou à la création de classes réutilisables pour vous aider à distribuer votre rampe de type.<figure><a href="/static/images/2019/02_CSS/fig17.png"><img src="/static/images/2019/02_CSS/fig17.png" alt="Figure 17. Distribution of the number of distinct font sizes per page." aria-labelledby="fig17-caption" aria-describedby="fig17-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1695270216&format=interactive"><div id="fig17-description" class="visually-hidden">
 
   

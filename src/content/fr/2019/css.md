@@ -5,16 +5,12 @@ title: CSS
 description: Chapitre CSS du Web Almanac 2019 couvrant les requêtes de couleur, d'unités,
   de sélecteurs, de mise en page, de typographie et de polices, d'espacement, de décoration,
   d'animation et de supports.
-authors:
-- una
-- argyleink
-reviewers:
-- meyerweb
-- huijing
+authors: [una, argyleink]
+reviewers: [meyerweb, huijing]
 translators: [SilentJMA]
-discuss: '1757'
-published: '2019-12-11 00:00:00 +0000'
-last_updated: '2019-12-11 00:00:00 +0000'
+discuss: 1757
+published: 2019-12-09T00:00:00.000Z
+last_updated: 2019-12-09T00:00:00.000Z
 ---
 
 ## Introduction
@@ -37,36 +33,37 @@ L'hex est le moyen le plus populaire pour décrire la couleur de loin, avec une 
 
 <figure>
   <a href="/static/images/2019/02_CSS/fig1.png">
-  
- <img src="/static/images/2019/02_CSS/fig1.png" alt="Figure 1. Popularity of color formats." aria-labelledby="fig1-caption" aria-describedby="fig1-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1946838030&format=interactive">   </a>
-  <div id="fig1-description" class="visually-hidden">
-  Diagramme à barres illustrant l'adoption des formats de couleur HSL, HSLA, RGB, RGBA et hexadécimale. Hex est utilisé sur 93 % des pages de version desktop, RGBA sur 83 %, RGB sur 22 %, HSLA 19 % et HSL 1 %. L’adoption sur les versions desktop et les appareils mobiles est similaire pour tous les formats de couleur, à l’exception de la LGV, pour laquelle l’adoption mobile est de 9 % (9 fois plus élevée).</div>).<figcaption id="fig1-caption">
-  Figure 1. Popularité des formats de couleur</figcaption></figure>.
+    <img src="/static/images/2019/02_CSS/fig1.png" alt="Figure 1. Popularity of color formats." aria-labelledby="fig1-caption" aria-describedby="fig1-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1946838030&amp;format=interactive">
+  </a>
+  <div id="fig1-description" class="visually-hidden">Diagramme à barres illustrant l'adoption des formats de couleur HSL, HSLA, RGB, RGBA et hexadécimale. Hex est utilisé sur 93 % des pages de version desktop, RGBA sur 83 %, RGB sur 22 %, HSLA 19 % et HSL 1 %. L’adoption sur les versions desktop et les appareils mobiles est similaire pour tous les formats de couleur, à l’exception de la LGV, pour laquelle l’adoption mobile est de 9 % (9 fois plus élevée).</div>
+  <figcaption id="fig1-caption">Figure 1. Popularité des formats de couleur.</figcaption>
+</figure>
 
 ### Choix de couleur
-Il y a [148 couleurs CSS nommées](https://www.w3.org/TR/css-color-4/#named-colors), non compris les valeurs spéciales `transparent` et `currentcolor`. Vous pouvez les utiliser par leur nom de chaîne pour un style plus lisible. Les couleurs nommées les plus populaires sont `black` et `white`, Sans surprise, suivi de `red` et `blue` <figure>.
-<a href="/static/images/2019/02_CSS/fig2.png">
-  
- <img src="/static/images/2019/02_CSS/fig2.png" alt="Figure 2. Top named colors." aria-labelledby="fig2-caption" aria-describedby="fig2-description" width="600" data-width="600" data-height="415" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1985913808&format=interactive"> 
- </a>   <div id="fig2-description" class="visually-hidden">
-  
-  Graphique à secteurs montrant les couleurs nommées les plus populaires. Le blanc est le plus populaire à 40%, puis le noir à 22%, le rouge 11% et le bleu 5%. </div> <figcaption id="fig2-caption">.
-  Figure 2. Top Couleurs nommées. </figcaption></figure>
+
+Il y a [148 couleurs CSS nommées](https://www.w3.org/TR/css-color-4/#named-colors), non compris les valeurs spéciales `transparent` et `currentcolor`. Vous pouvez les utiliser par leur nom de chaîne pour un style plus lisible. Les couleurs nommées les plus populaires sont `black` et `white`, Sans surprise, suivi de `red` et `blue`.
+<figure>
+  <a href="/static/images/2019/02_CSS/fig2.png">
+    <img src="/static/images/2019/02_CSS/fig2.png" alt="Figure 2. Top couleurs nommées." aria-labelledby="fig2-caption" aria-describedby="fig2-description" width="600" data-width="600" data-height="415" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1985913808&amp;format=interactive">
+  </a>
+  <div id="fig2-description" class="visually-hidden">Graphique à secteurs montrant les couleurs nommées les plus populaires. Le blanc est le plus populaire à 40%, puis le noir à 22%, le rouge 11% et le bleu 5%.</div>
+  <figcaption id="fig2-caption">Figure 2. Top Couleurs nommées.</figcaption></figure>
 
 La langue est également intéressante inférée par la couleur. Il y a plus d'exemples du style-américain "gray" que le style-britannique "grey". Presque chaque instance de [couleurs gray](https://www.rapidtables.com/web/color/gray-color.html) (`gray`, `lightgray`, `darkgray`, `slategray`, etc.) avait presque une double utilisation quand orthographié avec un "a" au lieu d'un "e". Si gr[a/e]ys combinés, ils se classeraient plus haut que le bleu, se solidifiant à la #4 place. Cela pourrait être la raison `silver` est classé plus haut que `grey` avec un "e" Dans les tableaux !
-###Nombre de couleurs
-Combien de couleurs de police différentes sont utilisées sur le Web? Donc, ce n'est pas le nombre total de couleurs uniques; c'est plutôt le nombre de couleurs différentes utilisé uniquement pour le texte. Les chiffres de ce tableau sont assez élevés et d’après notre expérience, nous savons que sans les variables CSS, les espaces, les tailles et les couleurs peuvent rapidement vous échapper et se fragmenter en une multitude de petites valeurs dans vos styles. Ces chiffres reflètent une difficulté de gestion du style et nous espérons que cela vous aidera à créer une perspective que vous pourrez ramener à vos équipes ou projets. Comment pouvez-vous réduire ce nombre à un montant gérable et raisonnable ?<figure><a href="/static/images/2019/02_CSS/fig3.png">
 
- <img src="/static/images/2019/02_CSS/fig3.png" alt="igure 3. Distribution of colors per page." aria-labelledby="fig3-caption" aria-describedby="fig3-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1361184636&format=interactive"> 
- </a> 
- <div id="fig3-description" class="visually-hidden">   
-  
-  Distribution montrant les 10, 25, 50, 75 et 90 pour cent de couleurs par page pour ordinateur et page mobile. Sur la version desktop, la distribution est la suivante: 8, 22, 48, 83 et 131. Les pages mobiles ont généralement davantage de couleurs de 1 à 10.</div>
-<figcaption id="fig3-caption">
-  Figure 3. Répartition des couleurs par page.
-</figcaption></figure>
+### Nombre de couleurs
+
+Combien de couleurs de police différentes sont utilisées sur le Web? Donc, ce n'est pas le nombre total de couleurs uniques; c'est plutôt le nombre de couleurs différentes utilisé uniquement pour le texte. Les chiffres de ce tableau sont assez élevés et d’après notre expérience, nous savons que sans les variables CSS, les espaces, les tailles et les couleurs peuvent rapidement vous échapper et se fragmenter en une multitude de petites valeurs dans vos styles. Ces chiffres reflètent une difficulté de gestion du style et nous espérons que cela vous aidera à créer une perspective que vous pourrez ramener à vos équipes ou projets. Comment pouvez-vous réduire ce nombre à un montant gérable et raisonnable ?
+<figure>
+  <a href="/static/images/2019/02_CSS/fig3.png">
+    <img src="/static/images/2019/02_CSS/fig3.png" alt="igure 3. Répartition des couleurs par page." aria-labelledby="fig3-caption" aria-describedby="fig3-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1361184636&amp;format=interactive">
+  </a>
+  <div id="fig3-description" class="visually-hidden">Distribution montrant les 10, 25, 50, 75 et 90 pour cent de couleurs par page pour ordinateur et page mobile. Sur la version desktop, la distribution est la suivante: 8, 22, 48, 83 et 131. Les pages mobiles ont généralement davantage de couleurs de 1 à 10.</div>
+<figcaption id="fig3-caption">Figure 3. Répartition des couleurs par page.</figcaption>
+</figure>
 
 ### Duplication de couleur
+
 Eh bien, nous sommes curieux ici et souhaitons vérifier le nombre de couleurs en double présentes sur une page. Sans un système CSS de classe réutilisable étroitement géré, les doublons sont assez faciles à créer. Il s'avère que la médiane a suffisamment des doublons pour mériter un passage pour les unifier avec des propriétés personnalisées.<figure><a href="/static/images/2019/02_CSS/fig4.png">
 <img src="/static/images/2019/02_CSS/fig4.png" alt="Figure 4. Distribution of duplicate colors per page." aria-labelledby="fig4-caption" aria-describedby="fig4-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=326531498&format=interactive">
  </a> 

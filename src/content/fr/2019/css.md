@@ -11,7 +11,7 @@ authors:
 reviewers:
 - meyerweb
 - huijing
-translators: []
+translators: [SilentJMA]
 discuss: '1757'
 published: '2019-12-11 00:00:00 +0000'
 last_updated: '2019-12-11 00:00:00 +0000'

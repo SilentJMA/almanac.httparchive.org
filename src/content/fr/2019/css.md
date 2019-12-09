@@ -320,6 +320,7 @@ Les requêtes multimédias permettent à CSS de se connecter à diverses variabl
   Figure 27. Répartition du nombre de requêtes média par page.
 
 ### Tailles des points d'arrêt des requêtes multimédias populaires
+
 Pour les requêtes de support de fenêtre tout type d'unité CSS peut être transmise à l'expression de requête pour évaluation. Auparavant, les gens passaient `em` et `px` dans la requête, mais plus d'unités ont été ajoutées au fil du temps, ce qui nous rend très curieux de savoir quels types de tailles sont généralement trouvés sur le Web. Nous supposons que la plupart des requêtes multimédias suivront les tailles d'appareils populaires, mais au lieu de supposer, regardons les données!
 
   
@@ -506,88 +507,90 @@ Voir le [Page Weight](./page-weight) pour un examen plus approfondi du nombre d'
 ### Bibliothèques
 Il est courant, populaire, pratique et puissant d'atteindre une bibliothèque CSS pour démarrer un nouveau projet. Bien que vous ne soyez peut-être pas du genre à atteindre une bibliothèque, nous avons interrogé le Web en 2019 pour voir ceux qui mènent le. Si les résultats vous étonnent, comme ils nous l'ont fait, je pense que c'est un indice intéressant de voir à quel point une bulle de développeur dans laquelle nous pouvons vivre est petite. Les choses peuvent sembler massivement populaires, sur le Web, mais un peu différentes.
 
-  
-  Library
-   Deskto     Mobile
-  tstrap
-    27.8%  26.9%
-       ani.css
-    6.1%
-        6.4%
-     URB Foundn
-        2.5%       UI        0 0.6%
- erial DesLite
-    0.3%
-        0.3%rialize C0.2%
-        0.2        PCSS
-     .1%
-        0.1%
-           AnguMaterial
-    0.1%
-        0.1%
-    Semanti
-        0.1%    Bulma     0.0%
-        0.0%
-t Design
-    0.0%
-        0.0%
- ailwindcs      0.0%
-        0.0%   Millig 0.0%ut whenin inqulity i   
-      
-            p
-       
-    
-    
-      
-        Boo    
-           
-      
-  mate     
-      
-        Zatio
-        2.6%
-      
-      
- Kit
-.5%
-            
-      
-        Matign     
-      
-      
-        MateSS
-        %
-      
-      
-ure    0
-      
-   lar          
-      
-     ic-u
-        0.1%
-      
-      
-    
-         
-      
-        An         
-      
-        ts
-  
-      
-      
-     ram
-       
-        0.0%
-      
-      
-        Clarity
-        0.0%
-        0.0%
-      
-    
-  
-  Figure 36. Pourcentage de pages contenant une bibliothèque CSS donnée.
+ <figure>
+  <table>
+    <thead>
+      <tr>
+        <th>Library</th>
+        <th>Desktop</th>
+        <th>Mobile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bootstrap</td>
+        <td class="numeric">27.8%</td>
+        <td class="numeric">26.9%</td>
+      </tr>
+      <tr>
+        <td>animate.css</td>
+        <td class="numeric">6.1%</td>
+        <td class="numeric">6.4%</td>
+      </tr>
+      <tr>
+        <td>ZURB Foundation</td>
+        <td class="numeric">2.5%</td>
+        <td class="numeric">2.6%</td>
+      </tr>
+      <tr>
+        <td>UIKit</td>
+        <td class="numeric">0.5%</td>
+        <td class="numeric">0.6%</td>
+      </tr>
+      <tr>
+        <td>Material Design Lite</td>
+        <td class="numeric">0.3%</td>
+        <td class="numeric">0.3%</td>
+      </tr>
+      <tr>
+        <td>Materialize CSS</td>
+        <td class="numeric">0.2%</td>
+        <td class="numeric">0.2%</td>
+      </tr>
+      <tr>
+        <td>Pure CSS</td>
+        <td class="numeric">0.1%</td>
+        <td class="numeric">0.1%</td>
+      </tr>
+      <tr>
+        <td>Angular Material</td>
+        <td class="numeric">0.1%</td>
+        <td class="numeric">0.1%</td>
+      </tr>
+      <tr>
+        <td>Semantic-ui</td>
+        <td class="numeric">0.1%</td>
+        <td class="numeric">0.1%</td>
+      </tr>
+      <tr>
+        <td>Bulma</td>
+        <td class="numeric">0.0%</td>
+        <td class="numeric">0.0%</td>
+      </tr>
+      <tr>
+        <td>Ant Design</td>
+        <td class="numeric">0.0%</td>
+        <td class="numeric">0.0%</td>
+      </tr>
+      <tr>
+        <td>tailwindcss</td>
+        <td class="numeric">0.0%</td>
+        <td class="numeric">0.0%</td>
+      </tr>
+      <tr>
+        <td>Milligram</td>
+        <td class="numeric">0.0%</td>
+        <td class="numeric">0.0%</td>
+      </tr>
+      <tr>
+        <td>Clarity</td>
+        <td class="numeric">0.0%</td>
+        <td class="numeric">0.0%</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 36. Pourcentage de pages contenant une bibliothèque CSS donnée.</figcaption>
+</figure>
 
 Ce graphique suggère que [Bootstrap](https://getbootstrap.com/) est une bibliothèque précieuse à connaître pour vous aider à trouver un emploi. Regardez toutes les opportunités qui s’offrent à vous! Il convient également de noter qu'il ne s'agit que d'un diagramme de signal positif: le total des calculs ne donne pas 100%, car tous les sites n'utilisent pas de framework CSS. Un peu plus de la moitié de tous les sites n'utilisent pas un framework CSS connu. Très intéressant, non ?!
 ### Réinitialiser les utilitaires

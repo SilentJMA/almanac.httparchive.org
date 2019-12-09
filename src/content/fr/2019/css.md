@@ -385,114 +385,116 @@ Les sites Web ressemblent à du papier numérique, non? En tant qu'utilisateurs,
    Figure 33. Répartition du nombre de feuilles de style chargées par page.
 
 ### Noms des feuilles de style
-Comment nommez-vous vos feuilles de style? Avez-vous été constant tout au long de votre carrière? Avez-vous lentement convergé ou divergé de façon constante? Ce graphique montre un petit aperçu de la popularité de la bibliothèque, mais impse intar names  files.        S name
-   Desktop
-   Mobile
-     yle.css
-   2.43%
-   2.55%me.min.cs     1.86     1.92%
-   trap.min.       1.1.11%
- .css
-    .67%
-    .66%
-  min.css?v2.2
-     64%
-        0.67%
-     yles.css
-   0.54%
-   0.55%
-     style.css5.2.2
-   0.41%
- 0.43%
-         mai  0.39%otstrap.c      0.4      0.42%
-  nt-awesom  0.38%tyle.min.       0.0.37%
-  styles__ss
-      8%
-        0.35%
-             de.css
-    .36%
-        0.36%
-    set.css
-   0.33%
-   0.37%les.css?v1.3
-     32%
-        0.35%
-             custom.css.32%
-        0.33%
-        print.css        0.32% 0.28%also a large glo populof CSS
 
-  
-    
-      
-tylesheet           
-    
-    
-      
-        st          
-      
-      
-        font-awesos
-   %
-      
-      
-        bootscss
- 09%
-             
-      
-        BfWyFJ2Rl5s    0    0    
-      
-        style.er=5.   0. 
-      
-        st           
-      
-        ?ver=               
-      
-  n.css
-        0.43%
-      
-      
-      
-        boss
-  0%
-      
-      
-        foe.css
-        0.37%
-      
-      
-      
-        scss
- 37%
-             
-      
-       ltr.c  0.3
-      
- fault    0  
-      
-        re          
-      
-      
-        styer=5.   0. 
-      
-
-    
-    0  
-      
-    
-
-       
-      
-      
-        responsive.css
-        0.28%
-        0.31%
-      
-    
-  
-  Figure 34. Noms de feuilles de style les plus fréquemment utilisés.
+Comment nommez-vous vos feuilles de style? Avez-vous été constant tout au long de votre carrière? Avez-vous lentement convergé ou divergé de façon constante? Ce graphique montre un petit aperçu de la popularité de la bibliothèque, mais impse intar names  files.      <figure>
+  <table>
+    <thead>
+      <tr>
+        <th>Nom de la feuille de style</th>
+        <th>Desktop</th>
+        <th>Mobile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>style.css</td>
+        <td class="numeric">2.43%</td>
+        <td class="numeric">2.55%</td>
+      </tr>
+      <tr>
+        <td>font-awesome.min.css</td>
+        <td class="numeric">1.86%</td>
+        <td class="numeric">1.92%</td>
+      </tr>
+      <tr>
+        <td>bootstrap.min.css</td>
+        <td class="numeric">1.09%</td>
+        <td class="numeric">1.11%</td>
+      </tr>
+      <tr>
+        <td>BfWyFJ2Rl5s.css</td>
+        <td class="numeric">0.67%</td>
+        <td class="numeric">0.66%</td>
+      </tr>
+      <tr>
+        <td>style.min.css?ver=5.2.2</td>
+        <td class="numeric">0.64%</td>
+        <td class="numeric">0.67%</td>
+      </tr>
+      <tr>
+        <td>styles.css</td>
+        <td class="numeric">0.54%</td>
+        <td class="numeric">0.55%</td>
+      </tr>
+      <tr>
+        <td>style.css?ver=5.2.2</td>
+        <td class="numeric">0.41%</td>
+        <td class="numeric">0.43%</td>
+      </tr>
+      <tr>
+        <td>main.css</td>
+        <td class="numeric">0.43%</td>
+        <td class="numeric">0.39%</td>
+      </tr>
+      <tr>
+        <td>bootstrap.css</td>
+        <td class="numeric">0.40%</td>
+        <td class="numeric">0.42%</td>
+      </tr>
+      <tr>
+        <td>font-awesome.css</td>
+        <td class="numeric">0.37%</td>
+        <td class="numeric">0.38%</td>
+      </tr>
+      <tr>
+        <td>style.min.css</td>
+        <td class="numeric">0.37%</td>
+        <td class="numeric">0.37%</td>
+      </tr>
+      <tr>
+        <td>styles__ltr.css</td>
+        <td class="numeric">0.38%</td>
+        <td class="numeric">0.35%</td>
+      </tr>
+      <tr>
+        <td>default.css</td>
+        <td class="numeric">0.36%</td>
+        <td class="numeric">0.36%</td>
+      </tr>
+      <tr>
+        <td>reset.css</td>
+        <td class="numeric">0.33%</td>
+        <td class="numeric">0.37%</td>
+      </tr>
+      <tr>
+        <td>styles.css?ver=5.1.3</td>
+        <td class="numeric">0.32%</td>
+        <td class="numeric">0.35%</td>
+      </tr>
+      <tr>
+        <td>custom.css</td>
+        <td class="numeric">0.32%</td>
+        <td class="numeric">0.33%</td>
+      </tr>
+      <tr>
+        <td>print.css</td>
+        <td class="numeric">0.32%</td>
+        <td class="numeric">0.28%</td>
+      </tr>
+      <tr>
+        <td>responsive.css</td>
+        <td class="numeric">0.28%</td>
+        <td class="numeric">0.31%</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 34. Noms de feuilles de style les plus fréquemment utilisés.</figcaption>
+</figure>
 
 Regardez tous ces noms de fichiers créatifs! style, styles, principal, par défaut, tout. L'un d'entre eux s'est cependant démarqué, le voyez-vous? `BfWyFJ2Rl5s.css` prend la place de numéro quatre pour les plus populaires. Nous avons fait des recherches un peu et notre meilleure supposition est que c'est lié à Facebook "like" boutons. Savez-vous quel est ce fichier? Laissez un commentaire, car nous aimerions entendre l'histoire.
+
 ### Taille de la feuille de style
+
 Quelle est la taille de ces feuilles de style? Notre taille CSS doit-elle inquiéter? À en juger par ces données, notre CSS n'est pas un délinquant principal pour le ballonnement des pages.
 
   

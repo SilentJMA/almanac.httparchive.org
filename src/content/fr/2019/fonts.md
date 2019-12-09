@@ -2,18 +2,13 @@
 part_number: I
 chapter_number: '6'
 title: Polices
-description: Chapitre sur les Polices du Web Almanac 2019 qui traite le lieu de chargement
-  des Fonte de caractères, les formats de Polices, la performances de chargement des
-  Polices, les Polices variables et la couleur de Polices.
-authors:
-- zachleat
-reviewers:
-- hyperpress
-- AymenLoukil
-translators: []
-discuss: '1761'
-published: '2019-12-03 00:00:00 +0000'
-last_updated: '2019-12-03 00:00:00 +0000'
+description: Chapitre sur les Polices du Web Almanac 2019 qui traite le lieu de chargement des polices, les formats de Polices, la performances de chargement des Polices, les Polices variables et la couleur de Polices.
+authors: [zachleat]
+reviewers: [hyperpress, AymenLoukil]
+translators: [SilentJMA]
+discuss: 1761
+published: 2019-11-11T00:00:00.000Z
+last_updated: 2019-12-09T00:00:00.000Z
 ---
 
 ## Introduction

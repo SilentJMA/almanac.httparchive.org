@@ -236,130 +236,158 @@ Il est également intéressant de noter les différences entre l'adoption d'un o
 
 ### Tailles de police
 
-C’est intéressant, car si vous demandiez à un utilisateur combien de tailles de police il estimait être sur une page, il renverrait en général un nombre de 5 ou nettement inférieur à 10. C’est la réalité ? Même dans un système de design, combien de tailles de police existe-t-il ? Nous avons interrogé le Web et avons trouvé que la médiane était 40 sur un mobile et 38 sur version desktop. Il serait peut-être temps de réfléchir sérieusement aux propriétés personnalisées ou à la création de classes réutilisables pour vous aider à distribuer votre rampe de type.<figure><a href="/static/images/2019/02_CSS/fig17.png"><img src="/static/images/2019/02_CSS/fig17.png" alt="Figure 17. Distribution of the number of distinct font sizes per page." aria-labelledby="fig17-caption" aria-describedby="fig17-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1695270216&format=interactive"><div id="fig17-description" class="visually-hidden">
+C’est intéressant, car si vous demandiez à un utilisateur combien de tailles de police il estimait être sur une page, il renverrait en général un nombre de 5 ou nettement inférieur à 10. C’est la réalité ? Même dans un système de design, combien de tailles de police existe-t-il ? Nous avons interrogé le Web et avons trouvé que la médiane était 40 sur un mobile et 38 sur version desktop. Il serait peut-être temps de réfléchir sérieusement aux propriétés personnalisées ou à la création de classes réutilisables pour vous aider à distribuer votre rampe de type.
 
-  
-  
-    
-  
-  Diagramme à barres illustrant la distribution de taille de police distincte par page. Pour les pages de bureau, les 10 ème, 25, 50, 75 et 90 ème centile sont les suivants: 8, 20, 40, 66 et 92 tailles de police. La distribution d'ordinateurs de bureau diverge du mobile au 75 ème percentile, où elle est plus grande de 7 à 13 tailles différentes.</div>
+<figure>
+  <a href="/static/images/2019/02_CSS/fig17.png">
+    <img src="/static/images/2019/02_CSS/fig17.png" alt="Figure 17. Répartition du nombre de tailles de police distincte par page." aria-labelledby="fig17-caption" aria-describedby="fig17-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1695270216&amp;format=interactive">
+  </a>
+  <div id="fig17-description" class="visually-hidden">Diagramme à barres illustrant la distribution de taille de police distincte par page. Pour les pages de bureau, les 10 ème, 25, 50, 75 et 90 ème centile sont les suivants: 8, 20, 40, 66 et 92 tailles de police. La distribution d'ordinateurs de bureau diverge du mobile au 75 ème percentile, où elle est plus grande de 7 à 13 tailles différentes.</div>
 <figcaption id="fig17-caption">
-  Figure 17. Répartition du nombre de tailles de police distincte par page.</figcaption></a></figure>
+  Figure 17. Répartition du nombre de tailles de police distincte par page.</figcaption></a>
+  </figure>
 
 ## Espacement
+
 ### Marges
-Une marge est l'espace extérieur aux éléments, comme l'espace que vous demandez lorsque vous écartez les bras. Cela ressemble souvent à l'espacement entre les éléments, mais ne se limite pas à cet effet. Dans un site Web ou une application, l'espacement joue un rôle important dans l'UX et le design. Voyons combien de code d'espacement des marges dans une feuille de style, allons-nous?<figure><a href="/static/images/2019/02_CSS/fig18.png"><img src="/static/images/2019/02_CSS/fig18.png" alt="Figure 18. Distribution of the number of distinct margin values per page." aria-labelledby="fig18-caption" aria-describedby="fig18-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=4233531&format=interactive"><div id="fig18-description" class="visually-hidden">
 
-  
-  
-    
-  
-  Diagramme à barres montrant la distribution de valeurs de marge distinctes par page. Pour les pages de version desktop, les 10, 25, 50, 75 et 90 ème centile sont: 12, 47, 96, 167 et 248 valeurs de marge distinctes. La distribution des versions desktop diffère du mobile au 75 ème centile, où elle est plus petite de 12 à 31 valeurs distinctes.</div>
+Une marge est l'espace extérieur aux éléments, comme l'espace que vous demandez lorsque vous écartez les bras. Cela ressemble souvent à l'espacement entre les éléments, mais ne se limite pas à cet effet. Dans un site Web ou une application, l'espacement joue un rôle important dans l'UX et le design. Voyons combien de code d'espacement des marges dans une feuille de style, allons-nous ?
+
+<figure>
+  <a href="/static/images/2019/02_CSS/fig18.png">
+    <img src="/static/images/2019/02_CSS/fig18.png" alt="Figure 18. Distribution du nombre de valeurs de marge distinctes par page." aria-labelledby="fig18-caption" aria-describedby="fig18-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=4233531&amp;format=interactive">
+  </a>
+  <div id="fig18-description" class="visually-hidden">Diagramme à barres montrant la distribution de valeurs de marge distinctes par page. Pour les pages de version desktop, les 10, 25, 50, 75 et 90 ème centile sont: 12, 47, 96, 167 et 248 valeurs de marge distinctes. La distribution des versions desktop diffère du mobile au 75 ème centile, où elle est plus petite de 12 à 31 valeurs distinctes.</div>
 <figcaption id="fig18-caption">
-  Figure 18. Répartition du nombre de valeurs de marge distinctes par page.</figcaption></a></figure>
+  Figure 18. Répartition du nombre de valeurs de marge distinctes par page.</figcaption></a>
+  </figure>
 
-Beaucoup semble-t-il ! La page de version desktop médiane a 96 valeurs de marge distinctes et 104 sur mobile. Cela crée de nombreux moments d'espacement uniques dans votre design. Vous voulez savoir combien de marges vous avez sur votre site ? Comment rendre tous ces espaces plus gérables?</div>
-<figure><div class="big-number">
-<figcaption>
+Beaucoup semble-t-il ! La page de version desktop médiane a 96 valeurs de marge distinctes et 104 sur mobile. Cela crée de nombreux moments d'espacement uniques dans votre design. Vous voulez savoir combien de marges vous avez sur votre site ? Comment rendre tous ces espaces plus gérables ?
+
 ### Propriétés logiques
 
-  0.6%
-  Figure 19. Pourcentage de pages de version desktop et mobiles qui incluent des propriétés logiques.</figcaption>
+<figure>
+  <div class="big-number">0.6%</div>
+  <figcaption>Figure 19. Pourcentage de pages de version desktop et mobiles qui incluent des propriétés logiques.</figcaption>
+</figure>
 
 Nous estimons que l'hégémonie de `margin-left` et `padding-top` est de durée limitée, bientôt complétée par leur direction d'écriture agnostique, successive, syntaxe de propriété logique. Bien que nous soyons optimistes, l'utilisation actuelle est assez faible à 0,67 % d'utilisation sur les pages de version desktop. Pour nous, cela ressemble à un changement d'habitude que nous devrons développer en tant qu'industrie, tout en espérant former de nouveaux développeurs à utiliser la nouvelle syntaxe.
-### z-index
-La superposition verticale, ou l'empilage, peut être gérée avec `z-index` dans le CSS. Nous étions curieux pour savoir combien de valeurs différentes les gens utilisent dans leurs sites. La gamme de ce `z-index` accepte est théoriquement infini, limité uniquement par les limitations de taille variable d'un navigateur. Toutes ces positions de pile sont-elles utilisées ? Voyons voir !<figure><a href="/static/images/2019/02_CSS/fig20.png"><img src="/static/images/2019/02_CSS/fig20.png" alt="Figure 20. Distribution of the number of distinct 'z-index' values per page." aria-labelledby="fig20-caption" aria-describedby="fig20-description" width="600" data-width="600" data-height="371" data-seamless="" data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1320871189&format=interactive"><div id="fig20-description" class="visually-hidden">
 
-  
-  
-    
-  
-  Diagramme à barres montrant la distribution de valeurs distinctes d'index z par page. Pour les pages de bureau, les 10, 25, 50, 75 et 90 ème centile sont: 1, 7, 16, 26 et 36 distincts z-index valeurs. La distribution sur ordinateur est beaucoup plus élevée que sur mobile, avec jusqu'à 16 valeurs distinctes au 90 ème centile.</div>
-<figcaption id="fig20-caption">
-  Figure 20. Distribution du nombre de valeurs distinctes du z-index par page.</figcaption></a></figure><code>
+### z-index
+
+La superposition verticale, ou l'empilage, peut être gérée avec `z-index` dans le CSS. Nous étions curieux pour savoir combien de valeurs différentes les gens utilisent dans leurs sites. La gamme de ce `z-index` accepte est théoriquement infini, limité uniquement par les limitations de taille variable d'un navigateur. Toutes ces positions de pile sont-elles utilisées ? Voyons voir !
+
+<figure>  
+  <a href="/static/images/2019/02_CSS/fig20.png">
+    <img src="/static/images/2019/02_CSS/fig20.png" alt="Figure 20. Répartition du nombre de valeur désigner 'z-index' par page." aria-labelledby="fig20-caption" aria-describedby="fig20-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1320871189&amp;format=interactive">
+  </a>
+  <div id="fig20-description" class="visually-hidden">Diagramme à barres montrant la distribution de valeurs distinctes d'index z par page. Pour les pages de bureau, les 10, 25, 50, 75 et 90 ème centile sont: 1, 7, 16, 26 et 36 distincts z-index valeurs. La distribution sur ordinateur est beaucoup plus élevée que sur mobile, avec jusqu'à 16 valeurs distinctes au 90 ème centile.</div>
+  <figcaption id="fig20-caption">Figure 20. Répartition du nombre de valeur désigner <code>z-index</code> par page.</figcaption>
+</figure>
 
 ### Valeurs du z-index populaires
+
 D'après notre expérience de travail, n'importe quel nombre de 9 semble être le choix le plus populaire. Même si nous nous sommes appris à utiliser le plus petit nombre possible, ce n'est pas la norme communautaire. Alors c'est quoi donc ?! Si les gens ont besoin de choses par dessus, quelles sont les numéros les plus populaires de `z-index` à passer ? Déposez votre boisson; celui-ci est assez drôle, vous pourriez le perdre.
 
-  
-  
-    
-  
-  Diagramme de dispersion de toutes les valeurs du z-index connues et du nombre de fois où elles sont utilisées, pour version desktop et mobile. 1 et 2 sont les plus fréquemment utilisés, mais le reste des valeurs populaires explosent par ordre de grandeur: 10, 100, 1 000 et ainsi de suite jusqu'à des nombres avec des centaines de chiffres.
-  Figure 21. Valeurs du z-index les plus fréquemment utilisées.
+<figure>
+  <a href="/static/images/2019/02_CSS/fig21.png">
+    <img src="/static/images/2019/02_CSS/fig21.png" alt="Figure 21. le plus fréquemment utilisé valeurs 'z-index' ." aria-labelledby="fig21-caption" aria-describedby="fig21-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1169148473&amp;format=interactive">
+  </a>
+  <div id="fig21-description" class="visually-hidden">Diagramme de dispersion de toutes les valeurs du z-index connues et du nombre de fois où elles sont utilisées, pour version desktop et mobile. 1 et 2 sont les plus fréquemment utilisés, mais le reste des valeurs populaires explosent par ordre de grandeur: 10, 100, 1 000 et ainsi de suite jusqu'à des nombres avec des centaines de chiffres.
+  Figure 21. Valeurs du z-index les plus fréquemment utilisées.</div>
+  <figcaption id="fig21-caption">Figure 21. le plus fréquemment valeurs utilisé <code>z-index</code> .</figcaption>
+</figure>
 
-
-  999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 ! 
-important
-  Figure 22. La plus grande valeur connue du z-index
+<figure>
+  <div class="big-number" style="word-break: break-all; font-size: 24px">999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 ! important</div>
+  <figcaption>Figure 22. La plus grande valeur connue du <code>z-index</code> </figcaption>
+</figure>
 
 ## Décoration
+
 ### Filtres
+
 Les filtres sont un moyen amusant et génial pour modifier les pixels que le navigateur a l'intention de dessiner à l'écran. Il s'agit d'un effet de post-traitement effectué sur une version plate de l'élément, du nœud ou du calque auquel il est appliqué. Photoshop les a rendus faciles à utiliser, puis Instagram les a rendus accessibles aux masses grâce à des combinaisons stylisées sur mesure. Ils existent depuis environ 2012, il y en a 10 et ils peuvent être combinés pour créer des effets uniques.
 
-
-  78%
-  Figure 23. Pourcentage de pages qui incluent une feuille de style avec la propriété Filter.
+<figure>
+  <div class="big-number">78%</div>
+  <figcaption>Figure 23. Pourcentage de pages qui incluent une feuille de style avec la propriété <code>filter</code> .</figcaption>
+</figure>
 
 Nous avons été ravis de voir que 78% des feuilles de style contiennent la propriété `filter` ! Ce nombre était également si élevé qu'il semblait un peu louche, alors nous avons cherché à expliquer le nombre élevé. Parce que soyons honnêtes, les filtres sont bien mais ils ne font pas partie de toutes nos applications et projets. Sauf si !
+
 Après une enquête plus approfondie, nous avons découvert que la feuille de style du [FontAwesome](https://fontawesome.com) est livrée avec certains `filter` utilisation, ainsi que l'intégration de [YouTube](https://youtube.com). Par conséquent, nous croyons que `filter` faufilé dans la porte arrière en passant par quelques feuilles de style très populaires. Nous pensons également que la présence de `-ms-filter` aurait également pu être incluse, contribuant au pourcentage élevé d'utilisation.
+
 ### Modes de fusion
+
 Les modes de fusion sont similaires aux filtres dans la mesure où ils sont un effet de post-traitement exécuté contre une version plate de leurs éléments cibles, mais ils sont uniques en ce qu'ils concernent la convergence des pixels. D'une autre manière, les modes de fusion sont la façon dont 2 pixels devraient se toucher lorsqu'ils se chevauchent. Quel que soit l'élément situé en haut ou en bas, cela affectera la façon dont le mode de fusion manipule les pixels. Il existe 16 modes de fusion - voyons quels sont les plus populaires.
 
+<figure>
+  <div class="big-number">8%</div>
+  <figcaption>Figure 24. Pourcentage de pages qui incluent une feuille de style avec la propriété <code>*-blend-mode</code>.</figcaption>
+</figure>
 
-  8%
-  Figure 24. Pourcentage de pages qui incluent une feuille de style avec la propriété *-blend-mode.
+Dans l'ensemble, l'utilisation des modes de fusion est beaucoup plus faible que celle des filtres, mais est encore suffisante pour être considérée comme modérément utilisée.
 
-Dans l'ensemble, l'utilisation des modes de fusion est beaucoup plus faible que celle des filtres, mais est encore suffisante pour être considérée comme modérément utilisée.Dans une future édition du Web Almanac, il serait intéressant d'explorer l'utilisation du mode de fusion pour avoir une idée des modes exacte que les développeurs utilisent, comme multiply, screen, color-burn, lighten, etc.
+Dans une future édition du Web Almanac, il serait intéressant d'explorer l'utilisation du mode de fusion pour avoir une idée des modes exacte que les développeurs utilisent, comme multiply, screen, color-burn, lighten, etc.
+
 ## Animation
+
 ### Transitions
 CSS a un formidable pouvoir d'interpolation qui peut être simplement utilisé en écrivant une seule règle sur la façon de faire la transition de ces valeurs. Si vous utilisez CSS pour gérer les états dans votre application, à quelle fréquence utilisez-vous des transitions pour effectuer la tâche? Interrogeons le web !
 
-  
-  
-    
-  
-  Diagramme à barres montrant la répartition des transitions par page. Pour les pages de bureau, les 10, 25, 50, 75 et 90 ème centiles sont: 0, 2, 16, 49 et 118 transitions. La distribution des ordinateurs de bureau est bien inférieure à celle des mobiles, avec pas moins de 77 transitions au 90 ème centile.
-
-  Figure 25. Répartition du nombre de transitions par page.
+<figure>
+  <a href="/static/images/2019/02_CSS/fig25.png">
+    <img src="/static/images/2019/02_CSS/fig25.png" alt="Figure 25. Répartition du nombre de transitions par page." aria-labelledby="fig25-caption" aria-describedby="fig25-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=419145172&amp;format=interactive">
+  </a>
+  <div id="fig25-description" class="visually-hidden">Diagramme à barres montrant la répartition des transitions par page. Pour les pages de bureau, les 10, 25, 50, 75 et 90 ème centiles sont: 0, 2, 16, 49 et 118 transitions. La distribution des ordinateurs de bureau est bien inférieure à celle des mobiles, avec pas moins de 77 transitions au 90 ème centile.</div>
+  <figcaption id="fig25-caption"> Figure 25. Répartition du nombre de transitions par page.</figcaption>
+</figure>
 
 C'est plutôt bien ! Nous avons vu `animate.css` en tant que bibliothèque populaire à inclure, ce qui apporte une tonne d'animation de transition, mais il est toujours agréable de voir que les gens envisagent de faire la transition de leurs interfaces utilisateur.
+
 ### Animations d'images clés
+
 Les animations d'images clés CSS sont une excellente solution pour vos animations ou transitions plus complexes. Ils vous permettent d'être plus explicite, ce qui offre un meilleur contrôle sur les effets. Ils peuvent être petits comme un effet d'image clé ou être grands avec de nombreux effets d'images clés composés dans une animation robuste. Le nombre médian d'animations d'images clés par page est bien inférieur aux transitions CSS.
 
-  
-  
-    
-  
-  Diagramme à barres montrant la distribution des images clés par page. Pour les pages mobiles, les 10, 25, 50, 75 et 90 ème centiles sont: 0, 0, 3, 18 et 76 images clés. La distribution mobile est légèrement supérieure à celle des versions desktop de 6 images clés aux 75 ème et 90 ème centiles.
-
-  Figure 26. Répartition du nombre d'images clés par page.
+<figure>
+  <a href="/static/images/2019/02_CSS/fig26.png">
+    <img src="/static/images/2019/02_CSS/fig26.png" alt="Figure 26. Répartition du nombre d'images clés par page." aria-labelledby="fig26-caption" aria-describedby="fig26-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=11848448&amp;format=interactive">
+  </a>
+  <div id="fig26-description" class="visually-hidden">Diagramme à barres montrant la distribution des images clés par page. Pour les pages mobiles, les 10, 25, 50, 75 et 90 ème centiles sont: 0, 0, 3, 18 et 76 images clés. La distribution mobile est légèrement supérieure à celle des versions desktop de 6 images clés aux 75 ème et 90 ème centiles.</div>
+  <figcaption id="fig26-caption">Figure 26. Répartition du nombre d'images clés par page.</figcaption>
+</figure>
 
 ## Requêtes médias
-Les requêtes multimédias permettent à CSS de se connecter à diverses variables au niveau du système afin de s'adapter de manière appropriée à l'utilisateur visiteur. Certaines de ces requêtes peuvent gérer les styles d'impression, les styles d'écran du projecteur et la taille de la fenêtre / écran. Pendant longtemps, les requêtes des médias ont été principalement exploitées pour leur connaissance de la fenêtre d'affichage. Les designers et les développeurs pouvaient adapter leurs dispositions pour les petits écrans, les grands écrans, etc. Plus tard, le Web a commencé à apporter de plus en plus de fonctionnalités et de requêtes, ce qui signifie que les requêtes multimédias peuvent désormais gérer les fonctionnalités d'accessibilité en plus des fonctionnalités de la fenêtre d'affichage.Un bon endroit pour commencer par les requêtes multimédias, c'est à peu près combien été utilisées par page ? À combien de moments ou de contextes différents la page type a-t-elle l'impression de vouloir répondre ? 
 
-  
-  
-    
-  
-  Diagramme à barres montrant la répartition des requêtes média par page. Pour les pages de version desktop, les 10, 25, 50, 75 et 90 ème centiles sont: 0, 3, 14, 27 et 43 images clés. La distribution de version desktop est similaire à la distribution mobile.
+Les requêtes multimédias permettent à CSS de se connecter à diverses variables au niveau du système afin de s'adapter de manière appropriée à l'utilisateur visiteur. Certaines de ces requêtes peuvent gérer les styles d'impression, les styles d'écran du projecteur et la taille de la fenêtre / écran. Pendant longtemps, les requêtes des médias ont été principalement exploitées pour leur connaissance de la fenêtre d'affichage. Les designers et les développeurs pouvaient adapter leurs dispositions pour les petits écrans, les grands écrans, etc. Plus tard, le Web a commencé à apporter de plus en plus de fonctionnalités et de requêtes, ce qui signifie que les requêtes multimédias peuvent désormais gérer les fonctionnalités d'accessibilité en plus des fonctionnalités de la fenêtre d'affichage.
 
-  Figure 27. Répartition du nombre de requêtes média par page.
+Un bon endroit pour commencer par les requêtes multimédias, c'est à peu près combien été utilisées par page ? À combien de moments ou de contextes différents la page type a-t-elle l'impression de vouloir répondre ? 
+
+<figure>
+  <a href="/static/images/2019/02_CSS/fig27.png">
+    <img src="/static/images/2019/02_CSS/fig27.png" alt="Figure 27. Répartition du nombre de requêtes média par page." aria-labelledby="fig27-caption" aria-describedby="fig27-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1892465673&amp;format=interactive">
+  </a>
+  <div id="fig27-description" class="visually-hidden">Diagramme à barres montrant la répartition des requêtes média par page. Pour les pages de version desktop, les 10, 25, 50, 75 et 90 ème centiles sont: 0, 3, 14, 27 et 43 images clés. La distribution de version desktop est similaire à la distribution mobile.</div>
+  <figcaption id="fig27-caption">Figure 27. Répartition du nombre de requêtes média par page.</figcaption>
+</figure>
 
 ### Tailles des points d'arrêt des requêtes multimédias populaires
 
 Pour les requêtes de support de fenêtre tout type d'unité CSS peut être transmise à l'expression de requête pour évaluation. Auparavant, les gens passaient `em` et `px` dans la requête, mais plus d'unités ont été ajoutées au fil du temps, ce qui nous rend très curieux de savoir quels types de tailles sont généralement trouvés sur le Web. Nous supposons que la plupart des requêtes multimédias suivront les tailles d'appareils populaires, mais au lieu de supposer, regardons les données!
 
-  
-  
-    
-  
-  Diagramme à barres des points d'accrochage aux requêtes multimédias les plus populaires. 768px et 767px sont les plus populaires avec 23 % et 16 %, respectivement. La liste disparaît rapidement après cela, avec 992px utilisés 6 % du temps et 1200px utilisés 4 % du temps. Le bureau et le mobile ont une utilisation similaire.
-
-  Figure 28. Points d'accrochage les plus fréquemment utilisés dans les requêtes multimédias.
+<figure>
+  <a href="/static/images/2019/02_CSS/fig28.png">
+    <img src="/static/images/2019/02_CSS/fig28.png" alt="Figure 28. Points d'accrochage les plus fréquemment utilisés dans les requêtes multimédias." aria-labelledby="fig28-caption" aria-describedby="fig28-description" width="600" data-width="600" data-height="371" data-seamless data-frameborder="0" data-scrolling="no" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQO5CabwLwQ5Lj1_9bbEFnFM1qEqCorymaBHrcaNiMSJ7sYDKHUI5iish5VAS-SxN447UTW-1-5-OjE/pubchart?oid=1353707515&amp;format=interactive">
+  </a>
+  <div id="fig28-description" class="visually-hidden">Diagramme à barres des points d'accrochage aux requêtes multimédias les plus populaires. 768px et 767px sont les plus populaires avec 23 % et 16 %, respectivement. La liste disparaît rapidement après cela, avec 992px utilisés 6 % du temps et 1200px utilisés 4 % du temps. Le bureau et le mobile ont une utilisation similaire.</div>
+  <figcaption id="fig28-caption">Figure 28. Points d'accrochage les plus fréquemment utilisés dans les requêtes multimédias.</figcaption>
+</figure>
 
 La figure 28 ci-dessus montre qu'une partie de nos hypothèses étaient correctes: il y a certainement une grande quantité de tailles spécifiques au téléphone, mais il y en a aussi qui ne le sont pas. Il est également intéressant de voir comment il est très dominant en pixels, avec quelques entrées qui utilisent `em` au-delà de la portée de ce tableau.
+
 ### Utilisation portrait vs landscape
+
 La valeur de requête la plus populaire parmi les tailles de point d'arrêt populaires semble être `768px`, ce qui nous a rendus curieux. Cette valeur a-t-elle été principalement utilisée pour passer à une mise en page portrait, car elle pourrait être basée sur l'hypothèse que `768px` représente la fenêtre de portrait mobile typique ? Nous avons donc effectué une requête de suivi pour voir la popularité de l'utilisation des modes portrait et paysage:
 
   
